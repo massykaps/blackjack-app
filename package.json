@@ -1,0 +1,18 @@
+{
+  "name": "blackjack-app",
+  "version": "1.0.0",
+  "description": "This code is offered as a potential starting point for completing the BBC Software Engineering Graduate Scheme tech test. You do **not** have to use this starter code.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
