@@ -1,3 +1,7 @@
+
+
+
+
 const assert = require('assert');
 
 // Define a function that takes in an array of cards and returns the total score for the hand
@@ -26,3 +30,46 @@ assert.strictEqual(newHand.length, 3, 'Incorrect number of cards in new hand');
 assert.notStrictEqual(newHand[0], newHand[1], 'Duplicate card in new hand');
 const newScore = calculateScore(newHand);
 assert.notStrictEqual(newScore, calculateScore(hand3), 'Score not updated after hit action');
+
+
+// Scenario #1
+
+const assert = require('assert');
+
+describe('blackjack game', () => {
+  it('player is dealt two cards in opening hand', () => {
+    // assume that the player is dealt two cards in their opening hand
+    const playerHand = [{ rank: '10', suit: 'hearts' }, { rank: 'ace', suit: 'spades' }];
+    
+    // check that the player's hand has a length of 2
+    assert.equal(playerHand.length, 2);
+  });
+});
+
+
+// Scenario #2
+
+const assert = require('assert');
+
+describe('blackjack game', () => {
+  it('player receives another card and score is updated when hitting', () => {
+    // assume that the player has a valid hand of cards
+    const playerHand = [{ rank: '5', suit: 'hearts' }, { rank: 'ace', suit: 'spades' }];
+    let playerScore = getScore(playerHand);
+
+    // assume that the player chooses to hit
+    playerHand.push({ rank: '3', suit: 'diamonds' });
+    const updatedPlayerScore = getScore(playerHand);
+
+    // check that the player has received another card
+    assert.equal(playerHand.length, 3);
+    // check that the player's score has been updated
+    assert.notEqual(playerScore, updatedPlayerScore);
+  });
+});
+
+function getScore(hand) {
+  // function to calculate the score of a blackjack hand
+  // not implemented for the sake of this example
+  return 0;
+}
