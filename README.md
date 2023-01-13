@@ -1,8 +1,19 @@
+This was a project that I started for the BBC application processs for their bbc software engineering graduate scheme. The task was to be given 8 blackjack scenarios and use my language of choice to test them and make them pass.
+
+Within this project, I used the principles of test driven development that I'd learnt during my time with Manchester Codes (now Command Shift). 
+
+My language of choice was Javascript, using the node framework and testing with Jest. I did find this slightly harder than I expected as I had to almost learn 
+blackjack again but through the prism of javascript. 
+
+
+
+
+//* Below is the readME provided by BBC*//
+
 ## Blackjack Tech Test - Starter Code
 
 This code is offered as a potential starting point for completing the BBC Software Engineering Graduate Scheme tech test.
 You do **not** have to use this starter code.
-
 
 ### Getting started
 
